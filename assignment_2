@@ -58,3 +58,7 @@ day = 12
 
 # Step 14: Output with two tabs using a different method
 print("\t\tToday is day {} of the month of {}.".format(day, month))
+
+
+print(2 / 4 + 17 + 5 * 2*2**3 - 15)
+print("\"Do\n\'t stop believing!\"")
