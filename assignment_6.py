@@ -4,7 +4,7 @@ employees = []
 # Keep asking for employee information
 while True:
 
-    # ---------------- Employee ID Validation ----------------
+    #  Employee ID Validation 
     while True:
         employee_id = input("Enter Employee ID: ")
 
@@ -13,7 +13,7 @@ while True:
         else:
             print("Invalid Employee ID. Must be numeric and 7 digits or less.")
 
-    # ---------------- Employee Name Validation ----------------
+    #  Employee Name Validation 
     while True:
         employee_name = input("Enter Employee Name: ")
 
@@ -28,7 +28,7 @@ while True:
         else:
             print("Invalid name. Enter again !!!")
 
-    # ---------------- Employee Email Validation ----------------
+    #  Employee Email Validation 
     invalid_email_characters = "!\"'#$%^&*()=+,<>/?;:[]{}\\"
 
     while True:
@@ -45,7 +45,7 @@ while True:
         else:
             print("Invalid email address. Enter again !!!")
 
-    # ---------------- Employee Address Validation ----------------
+    #  Employee Address Validation 
     invalid_address_characters = "!\"'@$%^&*_=+<>?;:[]{}"
 
     while True:
@@ -65,7 +65,7 @@ while True:
         else:
             print("Invalid address. Enter again !!!")
 
-    # ---------------- Employee Salary Validation ----------------
+    #  Employee Salary Validation 
     while True:
         try:
             employee_salary = float(input("Enter Employee Salary: "))
@@ -78,7 +78,7 @@ while True:
         except ValueError:
             print("Invalid salary. Enter again !!!")
 
-    # ---------------- Store Employee Information ----------------
+    #  Store Employee Information 
     employee = {
         "Employee ID": employee_id,
         "Employee Name": employee_name,
@@ -89,14 +89,14 @@ while True:
 
     employees.append(employee)
 
-    # ---------------- Ask User to Continue ----------------
+    #  Asking User to Continue 
     continue_choice = input("Do you want to add another employee? yes/no: ").lower()
 
     if continue_choice != "yes":
         break
 
 
-# ---------------- Update Information Using Comprehensions ----------------
+#  Updating Information Using Comprehensions 
 updated_employees = [
     {
         "Employee ID": employee["Employee ID"],
@@ -110,6 +110,6 @@ updated_employees = [
 ]
 
 
-# ---------------- Print Updated Employee Information ----------------
+#  Printing Updated Employee Information 
 print("\nUpdated Employee Information:")
 print(updated_employees)
